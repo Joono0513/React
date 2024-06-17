@@ -1,0 +1,15 @@
+package com.aloha.server.dto;
+
+import lombok.Data;
+
+@Data
+public class Board {
+  
+  private int no;
+  private String title;
+  private String writer;
+  private String content;
+  private String regDate;
+  private String updDate;
+  private int views;
+}
