@@ -71,3 +71,24 @@ DELETE
 ```
 axios.delete("경로")
 ```
+
+
+# 게시판 - STYLE
+> 리액트에서는 컴포넌트에서만 사용할 css를 모듈로 지정해서 사용할 수 있다.
+
+📝 컴포넌트.jsx
+📝 style.module.css
+
+css 파일을 *.module.css로 파일을 생성하면, css 안에 있는 선택자 및 스타일 속성을 컴포넌트에서 가져와서 객체로 적용할 수 있다.
+
+## style.module.css
+```
+.sample {color : red;}
+```
+## 컴포넌트.jsx
+```
+import styles from './style.module.css'
+```
+```
+<div className={styles.sample}>Hello React Style~!</div>
+```
